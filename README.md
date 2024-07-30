@@ -39,3 +39,7 @@ obj1 = RegularClass()
 obj2 = RegularClass()
 
 print(obj1 is obj2) # Outputs: True
+
+# Check if class or instance is a singleton
+print(hasattr(RegularClass, "is_singleton")) # Outputs: True
+print(hasattr(obj1, "is_singleton")) # Outputs: True

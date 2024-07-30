@@ -27,4 +27,5 @@ class singleton:
         if Singleton in class_ref.mro():
             return class_ref
         class_ref_properties = {name: getattr(class_ref, name) for name in dir(class_ref)}
+        class_ref_properties["is_singleton"] = True
         return type(class_ref.__name__, (Singleton, ) + class_ref.__bases__, class_ref_properties)
