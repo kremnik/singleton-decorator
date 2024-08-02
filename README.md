@@ -1,10 +1,4 @@
-# Singleton Pattern Implementation
-
-## Overview
-
-This repository contains an implementation of the Singleton design pattern in Python. This implementation includes a metaclass-based approach for enforcing the Singleton behavior and a decorator class for converting regular classes into singletons.
-
-## Singleton Implementation
+## Singleton Pattern Implementation
 
 ### MetaSingleton Metaclass
 
