@@ -12,6 +12,10 @@ The `Singleton` class uses `MetaSingleton` as its metaclass. Any class inheritin
 
 The `singleton` class is a decorator class. Its task is to add the `Singleton` class to the list of base classes of the decorated class. As a result, because the `Singleton`'s metaclass is `MetaSingleton`, the decorated class inherits this metaclass and becomes a singleton.
 
+### Be careful with ABC and ABCMeta
+
+Do not use this decorator if you are using `ABC` class or `ABCMeta` metaclass, as a "singletoned" class can only be created if the metaclass of this class is `type`.
+
 ## Usage
 
 ```python
